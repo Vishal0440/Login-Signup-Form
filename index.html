@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css style link  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- fontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/e4ae57ae73.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- animation link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div id="page" class="animate__animated animate__flipInY">
+        <!-- Login-form  -->
+        <div id="login" class="animate__animated animate__flipInY">
+          <h1>Login</h1>
+          <form id="login_frm" autocomplete="off">
+            <input
+              type="email"
+              placeholder="Your E-mail"
+              id="login_email"
+              required
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              id="login_password"
+              required
+            />
+            <button type="submit" id="login_btn">Login</button>
+          </form>
+          <p>Not Have Any Account? <span id="signUp_link">Sign Up</span></p>
+        </div>
+
+        <!-- sign-up form  -->
+        <div id="signUp" class="animate__animated animate__flipInY">
+          <h1>Sign Up</h1>
+          <form id="signUp_frm" autocomplete="off">
+            <input type="name" id="username" placeholder="Name" required />
+            <input type="email" id="email" placeholder="E-mail" required />
+            <input type="number" id="number" placeholder="Number" required />
+            <input
+              type="password"
+              id="password"
+              required
+              placeholder="Password"
+            />
+            <button id="signUp_btn" type="submit">Sign Up</button>
+          </form>
+          <p>Already Have Account? <span id="login_link">Login</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript  -->
+    <script src="script.js"></script>
+  </body>
+</html>
