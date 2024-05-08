@@ -30,15 +30,23 @@
               id="login_email"
               required
             />
+            <small id="login_email_warning"
+              ><i class="fa-solid fa-triangle-exclamation"></i> Email id not
+              registered...</small
+            >
             <input
               type="password"
               placeholder="Password"
               id="login_password"
               required
             />
+            <small id="login_password_warning"
+              ><i class="fa-solid fa-triangle-exclamation"></i> Wrong
+              password...</small
+            >
             <button type="submit" id="login_btn">Login</button>
           </form>
-          <p>Not Have Any Account? <span id="signUp_link">Sign Up</span></p>
+          <p>Doesn't have an account? <span id="signUp_link">Sign Up</span></p>
         </div>
 
         <!-- sign-up form  -->
@@ -47,6 +55,10 @@
           <form id="signUp_frm" autocomplete="off">
             <input type="name" id="username" placeholder="Name" required />
             <input type="email" id="email" placeholder="E-mail" required />
+            <small id="email_notice"
+              ><i class="fa-solid fa-triangle-exclamation"></i> Email is already
+              exit...</small
+            >
             <input type="number" id="number" placeholder="Number" required />
             <input
               type="password"
@@ -56,7 +68,7 @@
             />
             <button id="signUp_btn" type="submit">Sign Up</button>
           </form>
-          <p>Already Have Account? <span id="login_link">Login</span></p>
+          <p>Already have an account? <span id="login_link">Login</span></p>
         </div>
       </div>
     </div>

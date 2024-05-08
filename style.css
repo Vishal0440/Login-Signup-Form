@@ -10,9 +10,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #f7ff00; 
-background: -webkit-linear-gradient(to right, #db36a4, #f7ff00); 
-background: linear-gradient(to right, #db36a4, #f7ff00); 
+      background: linear-gradient(to right, #db36a4, #f7ff00); 
     }
 
     #page{
@@ -26,30 +24,30 @@ background: linear-gradient(to right, #db36a4, #f7ff00);
     #signUp{
       display: none;
     }
-    #login{
-      /* display: none; */
-    }
+    /* #login{
+      display: none;
+    } */
 
     #login h1, #signUp h1{
       text-align: center;
       color: #ec1414;
     }
 
-    #login_frm,#signUp_frm{
+    #login_frm, #signUp_frm{
       margin-top: 30px;
     }
 
-    #login_email, #login_password,#username,#email,#password,#number{
+    #login_email, #login_password, #username, #email, #password, #number{
       width: 100%;
       border: none;
       border-bottom: 1px solid #ccc;
       padding: 10px 2px;
-      margin-bottom: 20px;
+      margin-top: 20px;
       outline: none;
       color: #727272;
     }
 
-    #login_btn,#signUp_btn {
+    #login_btn, #signUp_btn {
       width: 100%;
       font-size: 1.2rem;
       font-weight: 600;
@@ -57,25 +55,29 @@ background: linear-gradient(to right, #db36a4, #f7ff00);
       padding: 10px;
       border: none;
       cursor: pointer;
-      margin-top: 10px;
-      background: #f7ff00;
-background: -webkit-linear-gradient(to right, #db36a4, #f7ff00);
-background: linear-gradient(to right, #db36a4, #f7ff00);
+      margin-top: 30px;
+      background: linear-gradient(to right, #db36a4, #f7ff00);
 
     }
     button:hover {
       opacity: 0.9;
     }
 
-    #login p,#signUp p{
+    #login p, #signUp p{
       margin-top: 20px;
       font-size: 14px;
       text-align: center;
       font-weight: 600;
     }
 
-    #login span,#signUp span{
+    #login span, #signUp span{
       color: blue;
       cursor: pointer;
       font-size: 16px;
+    }
+
+    #email_notice,#login_email_warning,#login_password_warning{
+      color: red;
+      margin-top: 10px;
+      display: none;
     }
